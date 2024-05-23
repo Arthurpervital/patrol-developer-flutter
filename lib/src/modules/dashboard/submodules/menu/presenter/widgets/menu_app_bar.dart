@@ -26,6 +26,7 @@ class MenuAppBar extends StatelessWidget implements PreferredSizeWidget {
           : null,
       title: Text(
         title,
+        key: const Key('alunos_key'),
         style: context.texts.header.copyWith(
           color: Colors.white,
         ),

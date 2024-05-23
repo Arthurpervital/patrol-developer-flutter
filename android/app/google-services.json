@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "520910637999",
+    "project_id": "patrol-developer-flutter",
+    "storage_bucket": "patrol-developer-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520910637999:android:8c7e5116d351b3cde03d5a",
+        "android_client_info": {
+          "package_name": "br.com.cesla.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiQ9YvsxWXRwhPWhztuq873TiybX-Ddio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

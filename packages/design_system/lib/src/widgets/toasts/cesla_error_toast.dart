@@ -7,6 +7,7 @@ class CeslaErrorToast {
   static void show(BuildContext context, String message) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
+        key: const Key('snackBarError'),
         backgroundColor: Colors.transparent,
         elevation: 0,
         content: Container(

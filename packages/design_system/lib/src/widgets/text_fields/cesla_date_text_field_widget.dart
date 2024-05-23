@@ -15,10 +15,11 @@ class CeslaDateTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CeslaTextField(
+      key: const Key('data_key'),
       labelText: 'Data de nascimento',
       prefixIcon: Icons.person_outline,
       controller: controller,
-      readOnly: true,
+      //readOnly: true,
       validator: validator,
       suffixIcon: Icons.date_range_rounded,
       onTap: () async {

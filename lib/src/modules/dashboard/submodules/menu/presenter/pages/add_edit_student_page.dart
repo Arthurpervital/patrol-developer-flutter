@@ -90,6 +90,7 @@ class _AddEditStudentPageState extends State<AddEditStudentPage> with Validation
                       Padding(
                         padding: const EdgeInsets.only(bottom: 16),
                         child: Text(
+                          key: const Key('obrigatorio_key'),
                           'Você precisa preencher os campos obrigatórios!',
                           style: context.texts.label.copyWith(
                             color: context.colors.error,
@@ -97,6 +98,7 @@ class _AddEditStudentPageState extends State<AddEditStudentPage> with Validation
                         ),
                       ),
                     CeslaTextField(
+                      key: const Key('name_key'),
                       labelText: 'Nome do aluno*',
                       prefixIcon: Icons.person_outline,
                       controller: nameController,
@@ -109,6 +111,7 @@ class _AddEditStudentPageState extends State<AddEditStudentPage> with Validation
                     ),
                     const SizedBox(height: 16),
                     CeslaTextField(
+                      key: const Key('cpf_key'),
                       labelText: 'CPF*',
                       keyboardType: TextInputType.number,
                       prefixIcon: Icons.person_outline,
@@ -121,6 +124,7 @@ class _AddEditStudentPageState extends State<AddEditStudentPage> with Validation
                     ),
                     const SizedBox(height: 16),
                     CeslaTextField(
+                      key: const Key('registroAcd_key'),
                       labelText: 'Registro acadêmico*',
                       prefixIcon: Icons.person_outline,
                       readOnly: isEdit,
@@ -129,6 +133,7 @@ class _AddEditStudentPageState extends State<AddEditStudentPage> with Validation
                     ),
                     const SizedBox(height: 24),
                     Text(
+                      key: const Key('dadosAcss_key'),
                       'Dados de acesso',
                       style: context.texts.label.copyWith(
                         fontWeight: FontWeight.bold,
@@ -136,6 +141,7 @@ class _AddEditStudentPageState extends State<AddEditStudentPage> with Validation
                     ),
                     const SizedBox(height: 24),
                     CeslaTextField(
+                      key: const Key('email_key'),
                       labelText: 'E-mail*',
                       prefixIcon: Icons.person_outline,
                       controller: emailController,
@@ -147,6 +153,7 @@ class _AddEditStudentPageState extends State<AddEditStudentPage> with Validation
               ListenableBuilder(
                 listenable: listenable,
                 builder: (context, child) => CeslaElevatedButton(
+                  key: const Key('buttonAddOrEdi'),
                   title: isEdit ? 'Salvar edições' : 'Adicionar',
                   onPressed: onSave,
                   isLoading:

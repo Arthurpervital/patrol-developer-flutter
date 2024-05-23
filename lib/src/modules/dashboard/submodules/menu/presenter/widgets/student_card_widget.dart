@@ -62,6 +62,7 @@ class StudentCard extends StatelessWidget {
                 child: InkWell(
                   borderRadius: BorderRadius.circular(18),
                   onTap: onTapEdit,
+                  key: const Key('edit_key'),
                   child: SizedBox(
                     height: 36,
                     width: 36,
@@ -76,6 +77,7 @@ class StudentCard extends StatelessWidget {
                 child: InkWell(
                   borderRadius: BorderRadius.circular(18),
                   onTap: onTapDelete,
+                  key: const Key('delete_key'),
                   child: SizedBox(
                     height: 36,
                     width: 36,

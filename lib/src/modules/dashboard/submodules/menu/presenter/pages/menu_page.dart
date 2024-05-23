@@ -46,6 +46,7 @@ class _MenuPageState extends State<MenuPage> {
             const Padding(
               padding: EdgeInsets.only(left: 16, right: 16, top: 16),
               child: CeslaTextField(
+                key: Key('buscar_key'),
                 labelText: 'Buscar...',
                 prefixIcon: Icons.search,
               ),
@@ -96,6 +97,7 @@ class _MenuPageState extends State<MenuPage> {
         ),
       ),
       floatingActionButton: FloatActionAddStudent(
+        key: const Key('buttonAddAluno'),
         onTap: () => context
             .pushNamed(
               Routes.addEditStudent.name,

@@ -27,6 +27,7 @@ class FloatActionAddStudent extends StatelessWidget {
               Icons.add,
             ),
             Text(
+               key: const Key('addStudent'),
               'Adicionar aluno',
               style: context.texts.label.copyWith(
                 color: Colors.white,

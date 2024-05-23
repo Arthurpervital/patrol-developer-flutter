@@ -30,6 +30,7 @@ class CeslaAlertDialog {
           ),
           actions: <Widget>[
             TextButton(
+              key: const Key('clickOk'),
               onPressed: onConfirm,
               child: Text(confirmText),
             ),

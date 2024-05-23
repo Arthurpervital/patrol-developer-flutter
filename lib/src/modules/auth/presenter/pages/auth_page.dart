@@ -61,6 +61,7 @@ class _AuthPageState extends State<AuthPage> with ValidationMixin {
               ),
               const SizedBox(height: 48),
               CeslaTextField(
+                key: const Key('inputUsername'),
                 labelText: 'Usuário',
                 prefixIcon: Icons.person_outline,
                 controller: usernameController,
@@ -68,6 +69,7 @@ class _AuthPageState extends State<AuthPage> with ValidationMixin {
               ),
               const SizedBox(height: 16),
               CeslaPasswordTextField(
+                key: const Key('inputPassword'),
                 controller: passwordController,
                 validator: isNotEmpty,
               ),
@@ -75,11 +77,13 @@ class _AuthPageState extends State<AuthPage> with ValidationMixin {
               const AccountRecoveryText(),
               const SizedBox(height: 32),
               CeslaElevatedButton(
+                key: const Key('buttonLogin'),
                 title: 'Entrar',
                 onPressed: signIn,
               ),
               const SizedBox(height: 16),
               CeslaOutlinedButton(
+                key: const Key('buttonSingUp'),
                 title: 'Cadastar',
                 onPressed: signUp,
               ),

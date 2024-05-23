@@ -36,6 +36,7 @@ class CeslaConfirmDialog {
               child: Text(cancelText),
             ),
             TextButton(
+              key: const Key('delete_ok'),
               onPressed: onConfirm,
               child: Text(confirmText),
             ),
